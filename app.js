@@ -10,12 +10,16 @@ app.get("/", function(req, res){
     res.end("Node JS")
 })
 
-app.get("/cadastrar/:item", function(req, res){
-    res.end(req.params.item)
+app.get("/cadastrar/:produto", function(req, res){
+    res.end("Produto: "+req.params.produto)
 })
 
-app.get("/contato/:nome/:cargo/:telefone/:urgencia", function(req, res){
-    res.end(" Pagina de Contato com: "+req.params.nome+"\n |Cargo: "+req.params.cargo+"\n |Telefone: "+req.params.telefone+"\n |Urgência: "+req.params.urgencia)
+app.get("/pesquisar/:produto/:modelo", function(req, res){
+    res.end(" Pesquisa do produto: "+req.params.produto+"\n |Modelo: "+req.params.modelo)
+})
+
+app.get("/contato/:sac/:produto", function(req, res){
+    res.end(" Pagina de Contato com: "+req.params.sac+"\n |Produto: "+req.params.produto)
 })
 
 app.get("/funcionarios/:nome/:cargo/:telefone/:salario", function(req, res){
@@ -29,5 +33,6 @@ app.get("/visualizar", function(req, res){
 app.get("/deletar", function(req, res){
     res.end("Deletar Dados")
 })
+
 
 
