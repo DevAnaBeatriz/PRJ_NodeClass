@@ -6,7 +6,7 @@
 
 ###
 
-<p align="left">This repository contains the source code of all Node classes in the Systems Analysis and Development course.</p>
+<p align="left">This repository contains the source code of some Node classes in the Systems Analysis and Development course.</p>
 
 <h2 align="left">How to Clone the Repository</h2>
 
